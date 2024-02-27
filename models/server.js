@@ -58,7 +58,7 @@ class Server {
 
   middlewares() {
     // CORS
-   this.app.use(cors({ origin: 'https://frontend-fl.vercel.app/' })); 
+   this.app.use(cors({ origin: FRONT_URL })); 
 
     // Lectura y parseo del body
     this.app.use(express.json());
