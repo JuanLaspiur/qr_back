@@ -29,7 +29,7 @@ module.exports = {
         eventName,
         name,
         qr,
-        url:`https://coraqr-back2.onrender.com/api/qrcreate?event=${event}&email=${email}`
+        url:`${process.env.BACK_API}qrcreate?event=${event}&email=${email}`
       };
 
       const invitationData = { name, lastname, email, event };
@@ -72,7 +72,7 @@ module.exports = {
             eventName,
             name,
             qr,
-            url:`https://coraqr-back2.onrender.com/api/qrcreate?event=${event}&email=${email}`
+            url:`${process.env.BACK_API}qrcreate?event=${event}&email=${email}`
           };
 
           const invitationData = { name, email, lastname, event };
