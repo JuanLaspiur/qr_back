@@ -58,7 +58,7 @@ class Server {
 
   middlewares() {
     // CORS
-   this.app.use(cors({ origin: FRONT_URL })); 
+   this.app.use(cors()); //origin: cors({ FRONT_URL})
 
     // Lectura y parseo del body
     this.app.use(express.json());
